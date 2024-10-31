@@ -3,74 +3,83 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolfgang Kohl - Mergers & Acquisitions Consultant</title>
-  </head>
+    <title>Wolfgang Kohl</title>
+    <!-- Atropos Styles -->
+    <style>
+      :root {
+        --sizeMultiplicator: 1;
 
-<!-- BODY -->
-  
-  <body>
-    <h2>Wolfgang Kohl</h2>
-    
-    <p>
-      I am a an Ex-Blizzard Entertainment and Cornell University alumni who specialize in helping people navigate the complex process of buying and selling. I have over 10 years of experience working with independent studios and on the worlds largest titles.
-      
-    </p>
-    
-    <h2>Services</h2>
-    <p>
-      I provide comprehensive services to guide you through every step of the process:
-    </p>
-    
-    <p>
-      - <b><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2y6d9uKE8mjHbn40GIS8Kkc-qWMob-bqbn4fP3U5cxUbV-0ZZRmCs-0I_XlGBC_6GBii_qhNnL">Consulting Services</a></b>: Helping clients create targeted growth and strategy plans.<br>
-      - <b><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2y6d9uKE8mjHbn40GIS8Kkc-qWMob-bqbn4fP3U5cxUbV-0ZZRmCs-0I_XlGBC_6GBii_qhNnL">Financial Advisory</a></b>: Offering financial planning and corporate finance solutions.<br>
-      - <b><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2y6d9uKE8mjHbn40GIS8Kkc-qWMob-bqbn4fP3U5cxUbV-0ZZRmCs-0I_XlGBC_6GBii_qhNnL">Marketing and Brand Management</a></b>: Digital marketing and brand strategy services.<br>
-      - <b><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2y6d9uKE8mjHbn40GIS8Kkc-qWMob-bqbn4fP3U5cxUbV-0ZZRmCs-0I_XlGBC_6GBii_qhNnL">Product Development and Innovation</a></b>: Assisting with product design, testing, and launch.<br>
-      - <b><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2y6d9uKE8mjHbn40GIS8Kkc-qWMob-bqbn4fP3U5cxUbV-0ZZRmCs-0I_XlGBC_6GBii_qhNnL">Technology Solutions</a></b>: Delivering custom app development and cybersecurity services.<br>
-    </p>
+        @media (max-width: 860px), (max-height: 490px) {
+          --sizeMultiplicator: 0.75;
+        }
 
-        <h2>Products</h2>    
-    <p>
-      - <b><a href="https://2299892374033.gumroad.com/l/jzqjvb">Breaking Into VC</a></b>: Award Winning Guide to Launching, Growing, and Scaling.<br>
-    </p>
+        @media (max-width: 645px), (max-height: 367px) {
+          --sizeMultiplicator: 0.5;
+        }
 
-<h2>Contact</h2>
-  <p>
-    Connect with me via <a href="mailto:wk275@cornell.edu">email</a> and <a href="https://www.linkedin.com/in/wolfgangakohl/">LinkedIn</a>.
-  </p>
+        @media (max-width: 430px), (max-height: 244px) {
+          --sizeMultiplicator: 0.35;
+        }
+      }
 
-<h2>Projects Supported</h2>
-    <p>
-World of Warcraft: Dragonflight (2022)<br>
-World of Warcraft: Shadowlands (2020)<br>
-Hearthstone: Madness at the Darkmoon Faire (2020)<br>
-Hearthstone: Scholomance Academy (2020)<br>
-Hearthstone: Ashes of Outland (2020)<br>
-Hearthstone: Galakrond's Awakening (2020)<br>
-World of Warcraft: Classic (2019)<br>
-Hearthstone: Descent of Dragons (2019)<br>
-Hearthstone: Saviors of Uldum (2019)<br>
-Hearthstone: Rise of Shadows (2019)<br>
-World of Warcraft: Battle for Azeroth (2018)<br>
-Hearthstone: Rastakhan's Rumble (2018)<br>
-Hearthstone: The Boomsday Project (2018)<br>
-Hearthstone: The Witchwood (2018)<br>
-World of Warcraft: Legion (2016)<br>
-Overwatch (2016)<br>
-Hearthstone: Mean Streets of Gadgetzan (2016)<br>
-Hearthstone: One Night in Karazhan (2016)<br>
-Hearthstone: Whispers of the Old Gods (2016)<br>
-Starcraft 2: Legacy of the Void (2015)<br>
-Hearthstone: League of Explorers (2015)<br>
-Hearthstone: The Grand Tournament (2015)<br>
-Heroes of the Storm (2015)
-    </p>
-  
-</html>
-</body>
+      @font-face {
+        font-family: "Garamond Classico SC";
+        src: url("https://res.cloudinary.com/dwyp2vxfj/raw/upload/v1729856304/Garamond_Classico_SC_uibolx.ttf")
+          format("truetype");
+      }
 
-<!-- MAIN -->
+      body {
+        overflow: hidden;
+        margin: 0;
+        background-color: black;
+        font-family: "Garamond Classico SC", serif;
+        color: #303432;
+        text-shadow: #1d201e99 1px 0px 3px, #ffffffaa -3px 0px 3px;
+        height: 100vh;
+      }
 
+      .atropos {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        transform: scale(var(--sizeMultiplicator));
+      }
+
+      #card {
+        border-radius: 2px;
+        aspect-ratio: 1.75;
+        width: 860px;
+        transition: transform 0.3s ease-out;
+        background-color: #cccfd2;
+        display: flex;
+        flex-direction: column;
+        padding-top: 65px;
+        padding-left: 34px;
+        padding-right: 52px;
+        padding-bottom: 26px;
+        box-sizing: border-box;
+        justify-content: space-between;
+      }
+
+      /* Additional Atropos Styles */
+
+      #grain,
+      #grain:before,
+      #grain:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/svg+xml,<svg viewBox="0 0 1000 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><filter id="blur-plus-grain" x="0%" y="0%" width="200%" height="200%"><feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0" result="grain"/></filter><rect width="100%" height="100%" filter="url(%23blur-plus-grain)"/></svg>');
+      }
+
+      /* Other CSS for Atropos here... */
+    </style>
+    <!-- Your Original Styles -->
     <style>
       body {
         max-width: 600px;
@@ -101,7 +110,61 @@ Heroes of the Storm (2015)
         text-decoration: underline;
       }
     </style>
+  </head>
 
-<!-- ANIMATION -->
+  <body>
+    <!-- Atropos HTML Structure -->
+    <div class="atropos">
+      <div class="atropos-scale">
+        <div class="atropos-rotate">
+          <div id="card" class="atropos-inner">
+            <div id="grain"></div>
+            <div id="header">
+              <span>212 555 6342</span>
+              <div id="logo">
+                <span>Kohl</span>
+                <span></span>
+                <span>Ventures</span>
+                <span>Professional Services</span>
+              </div>
+            </div>
+            <div id="center">
+              <div>
+                <span>Wolfgang</span>
+                <span>KOHL</span>
+                <span>Founder & Managing Director</span>
+              </div>
+            </div>
+            <div id="footer">
+              <span>358</span>
+              <span>Exchange</span>
+              <span>Place</span>
+              <span>New York, N.</span>
+              <span>Y.</span>
+              <span>10099</span>
+              <span>fax</span>
+              <span>212 555</span>
+              <span>6390</span>
+              <span>telex</span>
+              <span>10 4534</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Original Content -->
+    <h2>Wolfgang Kohl</h2>
+    <p>I am an Ex-Blizzard Entertainment and Cornell University alumni...</p>
+    <h2>Services</h2>
+    <p>I provide comprehensive services...</p>
 
+    <!-- JavaScript for Atropos -->
+    <script type="module">
+      import Atropos from "https://esm.sh/atropos";
+      Atropos({
+        el: ".atropos"
+      });
+    </script>
+  </body>
+</html>
