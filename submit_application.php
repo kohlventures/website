@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $message, $headers)) {
-        echo "Application submitted successfully.";
+        echo "Application submitted successfully. Tawing!";
     } else {
         echo "There was an error sending the application. Please try again later.";
     }
