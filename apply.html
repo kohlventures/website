@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suck Ventures</title>
+    <title>Suck Ventures - Open Application</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <style>
       body {
         font-family: 'Lato', sans-serif;
-        max-width: 600px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 20px;
         font-size: 14px;
@@ -16,7 +16,7 @@
         color: #333;
       }
       h1 {
-        font-size: 5em;
+        font-size: 3em;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         margin-top: 34px;
@@ -73,9 +73,15 @@
   </head>
 
   <body>
-    <h1>APPLY</h1>
+    <h1>Open Application</h1>
+    <p>Founded in 2009, Suck Ventures is dedicated to building the future through technology, supporting innovators at all stages. We are looking for passionate individuals to join our mission of supporting bold ideas and entrepreneurs in various fields. We value diverse skills, experiences, and perspectives to help build transformative technology for the future.</p>
 
-    <form action="/submit" method="post">
+    <p>If you believe you have what it takes to be part of our team and shape the future, apply here. We're always looking for talent in technology, operations, marketing, community management, and more.</p>
+
+    <h2>The Role</h2>
+    <p>In this open application, we're not focusing on a specific role—rather, we want to hear from you about how you can contribute. Whether you are a developer, designer, marketer, or have expertise in a different domain, we value individuals who are excited about technology and are eager to innovate. This is your opportunity to tell us what unique strengths you bring and how you envision yourself making an impact.</p>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -85,20 +91,107 @@
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" required>
 
-      <label for="position">Position Applying For</label>
+      <label for="location">Location (City)</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="position">Area of Interest</label>
       <select id="position" name="position" required>
-        <option value="">Select a position</option>
+        <option value="">Select an area of interest</option>
         <option value="developer">Developer</option>
         <option value="designer">Designer</option>
         <option value="marketing">Marketing Specialist</option>
+        <option value="operations">Operations</option>
+        <option value="community_manager">Community Management</option>
+        <option value="other">Other</option>
       </select>
 
       <label for="cover-letter">Cover Letter</label>
-      <textarea id="cover-letter" name="cover_letter" rows="6" required></textarea>
+      <textarea id="cover-letter" name="cover_letter" rows="6" required placeholder="Tell us why you want to work here and how you can make an impact"></textarea>
+
+      <label for="resume">Upload Resume</label>
+      <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+      <label for="linkedin">LinkedIn Profile</label>
+      <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile" required>
+
+      <h2>Voluntary Self-Identification</h2>
+      <p>For government reporting purposes, we ask candidates to respond to the below self-identification survey. Completion of the form is entirely voluntary. Whatever your decision, it will not be considered in the hiring process or thereafter. Any information that you do provide will be recorded and maintained in a confidential file.</p>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="">Select your gender</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="non_binary">Non-binary</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <label for="hispanic">Are you Hispanic/Latino?</label>
+      <select id="hispanic" name="hispanic">
+        <option value="">Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <label for="race">Race & Ethnicity Definitions</label>
+      <select id="race" name="race">
+        <option value="">Select your race/ethnicity</option>
+        <option value="american_indian">American Indian or Alaska Native</option>
+        <option value="asian">Asian</option>
+        <option value="black">Black or African American</option>
+        <option value="hispanic">Hispanic or Latino</option>
+        <option value="native_hawaiian">Native Hawaiian or Other Pacific Islander</option>
+        <option value="white">White</option>
+        <option value="two_or_more">Two or More Races</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <h2>Voluntary Self-Identification of Disability</h2>
+      <p>We are a federal contractor or subcontractor. The law requires us to provide equal employment opportunity to qualified people with disabilities. We have a goal of having at least 7% of our workers as people with disabilities. The law says we must measure our progress towards this goal. To do this, we must ask applicants and employees if they have a disability or have ever had one. People can become disabled, so we need to ask this question at least every five years.</p>
+
+      <label for="disability_status">Disability Status</label>
+      <select id="disability_status" name="disability_status">
+        <option value="">Select your disability status</option>
+        <option value="yes">Yes, I have a disability or have had one</option>
+        <option value="no">No, I do not have a disability</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <h2>Veteran Status</h2>
+      <p>If you believe you belong to any of the categories of protected veterans listed below, please indicate by making the appropriate selection. As a government contractor subject to the Vietnam Era Veterans Readjustment Assistance Act (VEVRAA), we request this information in order to measure the effectiveness of the outreach and positive recruitment efforts we undertake pursuant to VEVRAA.</p>
+
+      <label for="veteran_status">Veteran Status</label>
+      <select id="veteran_status" name="veteran_status">
+        <option value="">Select your veteran status</option>
+        <option value="disabled_veteran">Disabled Veteran</option>
+        <option value="recently_separated">Recently Separated Veteran</option>
+        <option value="active_wartime">Active Duty Wartime or Campaign Badge Veteran</option>
+        <option value="armed_forces">Armed Forces Service Medal Veteran</option>
+        <option value="no_military">I am not a protected veteran</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+
+      <h2>Pay Transparency Nondiscrimination Provision</h2>
+      <p>Suck Ventures will not discharge or otherwise discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless such disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by the employer, or (c) consistent with the company’s legal duty to furnish information.</p>
+
+      <h2>Privacy Notice</h2>
+      <p>Your privacy is important to us. The information provided in this application will be used solely for recruitment purposes and in accordance with applicable data protection regulations. For more details, please refer to our <a href="https://suckventures.com/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+
+      <label for="confirm">
+        <input type="checkbox" id="confirm" name="confirm" required>
+        I confirm that all information provided in this application is true and accurate to the best of my knowledge.
+      </label>
 
       <button type="submit">Submit Application</button>
     </form>
 
-    <a href="https://suckventures.com/"><h1>BACK</h1></a>    
+    <h2>Legal Information</h2>
+    <p>At Suck Ventures, we are committed to fostering an inclusive and diverse workplace. We are proud to be an equal opportunity employer and do not discriminate on the basis of race, color, religion, gender, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other legally protected status.</p>
+    <p>We participate in E-Verify. Please click <a href="https://www.e-verify.gov/" target="_blank">here</a> to learn more about your rights under E-Verify.</p>
+    <p>We strive to create an environment that supports the physical and mental well-being of our employees. Our benefits include health, dental, vision, disability, and life insurance, as well as a 401(k) plan, paid time off, and more.</p>
+    <p>Suck Ventures reserves the right to make use of any unsolicited resumes received from outside recruiting agencies and/or individual recruiters without being responsible for payment of any fees asserted from the use of unsolicited resumes.</p>
+
+    <a href="https://suckventures.com/"><h2>BACK</h2></a>    
   </body>
 </html>
