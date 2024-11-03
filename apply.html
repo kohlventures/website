@@ -70,6 +70,27 @@
         background-color: #444;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+
+          const formData = new FormData(form);
+          fetch("submit_application.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(response => response.text())
+          .then(data => {
+            alert("Application submitted successfully!");
+          })
+          .catch(error => {
+            alert("There was an error submitting your application. Please try again later.");
+          });
+        });
+      });
+    </script>
   </head>
 
   <body>
