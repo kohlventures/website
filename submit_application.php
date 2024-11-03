@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare email content
-    $to = "hr@suckventures.com";
+    $to = "treasuregoblinportal@gmail.com";
     $subject = "New Application from $name";
     $message = "You have received a new application.\n\n" .
                "Name: $name\n" .
