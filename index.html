@@ -1,124 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4HHXQTT7P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-X4HHXQTT7P');
-    </script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4HHXQTT7P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X4HHXQTT7P');
+  </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LFM</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <style>
-      /* Basic Reset and Body Styling */
-      body {
-        font-family: 'Lato', sans-serif;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-        font-size: 4vw; /* Makes font responsive to screen width */
-        line-height: 1.7em;
-        color: #333;
-      }
-      
-      /* Header Styling */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-        border-bottom: 1px solid #ddd;
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LFM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset and Body Styling */
+    body {
+      font-family: 'Lato', sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 14px;
+      line-height: 1.7em;
+      color: #333;
+    }
 
-      header .logo {
-        font-size: 2em;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        color: #2b2b2b;
-        text-decoration: none;
-      }
+    /* Header Styling */
+    header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
 
-      header nav a {
-        margin-left: 20px;
-        font-size: 1.2em;
-        color: #1a0dab;
-        text-decoration: none;
-      }
+    /* Responsive Heading Styling */
+    h1 {
+      font-size: 5em;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #2b2b2b;
+      text-align: center;
+      margin-top: 20px;
+      word-break: break-word; /* Prevents overflow issues */
+      line-height: 1.1; /* Reduces spacing between lines */
+    }
 
-      header nav a:hover {
-        text-decoration: underline;
-      }
+    /* Link Styling */
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
 
-      /* Responsive Heading Styling */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer Styling */
+    footer {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    /* Responsive Layout for Smaller Screens */
+    @media (max-width: 600px) {
       h1 {
-        font-size: 8vw; /* Responsive font-size for h1 */
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        margin-top: 34px;
-        color: #2b2b2b;
-        text-align: center;
+        font-size: 4em; /* Smaller size for smaller screens to prevent overlap */
       }
+    }
+  </style>
+</head>
 
-      /* Right-align class */
-      .right {
-        text-align: right;
-      }
+<body> 
+  <!-- Header Section -->
+  <header>
+    <h1>LOOKING FOR MORE</h1>
+  </header>
 
-      /* Link Styling */
-      a {
-        color: #1a0dab;
-        text-decoration: none;
-      }
+  <!-- Main Content Section with Links -->
+  <main>
+    <a href="https://suckventures.com/ventures"><h1>LFM VENTURES</h1></a>
+    <a href="https://suckventures.com/labs"><h1>LFM LABS</h1></a>
+  </main>
 
-      a:hover {
-        text-decoration: underline;
-      }
-
-      /* Footer Styling */
-      footer {
-        font-size: 3vw; /* Responsive font size for footer */
-        text-align: center;
-        margin-top: 2em;
-      }
-
-      /* Media Query for Larger Screens */
-      @media (min-width: 600px) {
-        body {
-          font-size: 14px; /* Regular font-size for body on larger screens */
-        }
-        h1 {
-          font-size: 5em; /* Original heading size */
-        }
-        footer {
-          font-size: 10px;
-        }
-      }
-    </style>
-  </head>
-
-  <body> 
-    <!-- Header Section -->
-    <header>
-      <a href="/" class="logo">LFM</a>
-      <nav>
-        <a href="https://suckventures.com/ventures">Ventures</a>
-        <a href="https://suckventures.com/labs">Labs</a>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <h1>LOOKING FOR MORE</h1>
-      <a href=""><h1>LFM VENTURES</h1></a>
-      <a href=""><h1>LFM LABS</h1></a>
-    </main>
-
-    <!-- Footer Section -->
-    <footer> &copy; 2024 LFM HC</footer>
-  </body>
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2024 Your Company
+  </footer>
+</body>
 </html>
