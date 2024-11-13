@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1WB7D3QMR"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
     
-      gtag('config', 'G-H1WB7D3QMR');
+    gtag('config', 'G-H1WB7D3QMR');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=EB+Garamond:wght@400&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>LFM</title>
     <style>
-        /* General Styles */
-        body, h1, p, a {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            color: #000;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: 'EB Garamond', serif;
-            background: #fff;
-        }
-
-        /* Container and Hero Section */
-        .container {
-            text-align: center;
-            max-width: 800px;
-            padding: 50px;
-        }
-        .main-title {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 100px;
-            font-weight: 700;
-            letter-spacing: 10px;
-        }
-
-        /* Link and Footer Text Styles */
-        .link, .footer-text {
-            font-size: 16px;
-            color: #555;
-            font-family: 'EB Garamond', serif;
-            text-decoration: none;
-            display: block;
-            margin: 10px 0;
-        }
-        .link:hover {
-            text-decoration: underline;
-        }
-        .footer-text {
-            font-size: 14px;
-            color: #999;
-        }
-
-        /* Responsive Adjustments */
-        @media screen and (max-width: 767px) {
-            .main-title {
-                font-size: 80px;
-            }
-        }
+    /* General Styles */
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'EB Garamond', serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    }
+    /* Hero Title */
+    .main-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    }
+    /* Link and Footer Text Styles */
+    .link, .footer-text {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+    margin: 10px 0;
+    }
+    .link:hover {
+    text-decoration: underline;
+    }
+    .footer-text {
+    font-size: 14px;
+    color: #999;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 767px) {
+    .main-title {
+    font-size: 80px;
+    }
+    }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="main-title">LFM</h1>
-        <a href="https://www.google.com/maps/place/Avenue+of+the+Stars,+Los+Angeles,+CA" class="link">LOS ANGELES</a>
-        <a href="https://www.google.com/maps/place/Koreatown,+New+York,+NY" class="link">NEW YORK</a>
-        <a href="mailto:hello@lfmhc.com" class="link">CONTACT US</a>
-        <p class="footer-text">© 2024. ALL RIGHTS RESERVED.</p>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="main-title">LFM</h1>
+      
+      <div class="row justify-content-center my-4">
+        <div class="col-md-3 col-12">
+          <a href="https://www.google.com/maps/place/Avenue+of+the+Stars,+Los+Angeles,+CA" class="link">LOS ANGELES</a>
+        </div>
+        <div class="col-md-3 col-12">
+          <a href="https://www.google.com/maps/place/Koreatown,+New+York,+NY" class="link">NEW YORK</a>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3 col-12">
+          <a href="mailto:hello@lfmhc.com" class="link">CONTACT US</a>
+        </div>
+        <div class="col-md-3 col-12">
+          <p class="footer-text">© 2024. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wH+hBfyJXsW2fSfsIGffvZJ7hI7LfS+rtn4YoocU6ipU+Po5Bz+BHEM+2cwZ9ZZ5" crossorigin="anonymous"></script>
+  </body>
 </html>
