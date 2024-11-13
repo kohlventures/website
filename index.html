@@ -1,96 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4HHXQTT7P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X4HHXQTT7P');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profile</title>
+    <style>
+        /* CSS Styling */
+        .hero-without-image {
+            background-color: #f57f7a;
+            border-bottom: 1px solid #e4ebf3;
+            padding: 80px 30px;
+            position: relative;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-wrapper-two {
+            text-align: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LFM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <style>
-    /* Basic Reset and Body Styling */
-    body {
-      font-family: 'Lato', sans-serif;
-      max-width: 90%;
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      font-size: 14px;
-      line-height: 1.7em;
-      color: #333;
-    }
+        .margin-bottom-24px {
+            margin-bottom: 24px;
+        }
+        
+        .button-primary {
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background-color: #1a1b1f;
+            padding: 12px 25px;
+            font-size: 12px;
+            line-height: 20px;
+            transition: all .2s;
+        }
 
-    /* Header Styling */
-    header {
-      text-align: left;
-      padding: 20px 0;
-      border-bottom: 1px solid #ddd;
-    }
+        .button-primary:hover {
+            color: #fff;
+            background-color: #32343a;
+        }
 
-    /* Responsive Heading Styling */
-    h1 {
-      font-size: clamp(24px, 10vw, 48px); /* Scales based on viewport width */
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      color: #2b2b2b;
-      text-align: left;
-      margin: 20px 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+        .button-primary:active {
+            background-color: #43464d;
+        }
 
-    /* Link Styling */
-    a {
-      color: #1a0dab;
-      text-decoration: none;
-      display: block;
-      padding: 10px 0; /* Increases tappable area for mobile */
-    }
+        .text-block {
+            color: #000;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 60px;
+            padding-bottom: 0px;
+            font-family: 'Changa One', Impact, sans-serif;
+            font-size: 150px;
+            font-weight: 700;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .columns {
+            margin-top: 100px;
+        }
 
-    /* Footer Styling */
-    footer {
-      font-size: 10px;
-      text-align: left;
-      margin-top: 2em;
-    }
+        .column, .column-2 {
+            text-align: center;
+        }
 
-    /* Further reduce font size on very small screens */
-    @media (max-width: 400px) {
-      h1 {
-        font-size: 8vw;
-      }
-    }
-  </style>
+        .link, .link-2 {
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .text-block-2 {
+            color: #000;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+
+        .link-3 {
+            color: #000;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        .body {
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+
+        .column-4, .column-5, .column-6 {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 991px) {
+            .container {
+                max-width: 728px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .hero-without-image {
+                padding: 60px 15px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            .container {
+                max-width: none;
+            }
+            .text-block {
+                padding-top: 60px;
+                padding-bottom: 60px;
+                font-family: 'Changa One', Impact, sans-serif;
+                font-size: 150px;
+            }
+        }
+    </style>
 </head>
-
-<body> 
-  <!-- Header Section 
-  <header>
-  
-  </header>
-  -->
-
-  <!-- Main Content Section with Links -->
-  <main>
-    <a href="#"><h1>LFM VENTURES</h1></a>
-    <a href="#"><h1>LFM LABS</h1></a>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <!-- Intentionally Blank -->
-  </footer>
+<body class="body">
+    <div class="columns w-row">
+        <div class="w-col w-col-4"></div>
+        <div class="w-col w-col-4">
+            <div class="text-block">LFM</div>
+            <div class="w-row">
+                <div class="column-4 w-col w-col-6">
+                    <a href="#" class="link">LOS ANGELES</a>
+                </div>
+                <div class="column-5 w-col w-col-6">
+                    <a href="#" class="link-2">NEW YORK</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-col w-col-4"></div>
+    </div>
+    <div class="w-row">
+        <div class="column-6 w-col w-col-6">
+            <a href="mailto:hello@lfmhc.com" class="link-3">CONTACT US</a>
+        </div>
+        <div class="w-col w-col-6">
+            <div class="text-block-2">© 2024. ALL RIGHTS RESERVED.</div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67343"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
 </body>
 </html>
